@@ -74,7 +74,7 @@ def load_notes(notestep, notestep1, notescale):
     rev_interval = [0, 1, 4, 1, 2, 4]
     tones_fwd, tones_rev = [], []
     
-    print(f'The frequencies in Hz of ascending notes for {notescale} in the Chinese scale')
+    print(f'The frequencies in Hz of ascending notes for {notescale} as root note in the Chinese scale')
     for note in notes_interval: 
         # print the frequency ascending notes of the scale        
         if len(note_name[notestep]) == 2:
@@ -90,7 +90,7 @@ def load_notes(notestep, notestep1, notescale):
         tones_fwd.append(tone)
     
     print()
-    print(f'The frequencies in Hz of descending notes for {notescale} in the Chinese scale')
+    print(f'The frequencies in Hz of descending notes for {notescale} as root note in the Chinese scale')
 
     for note in rev_interval: 
         notestep1 = notestep1 - note
